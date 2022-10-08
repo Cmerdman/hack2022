@@ -33,5 +33,10 @@ app.layout = html.Div(children=[
     )
 ])
 
+@app.callback(
+    Output(component_id='my-output', component_property='children'),
+    Input(component_id='my-input', component_property='value')
+)
+
 if __name__ == '__main__':
     app.run_server(debug=True)
