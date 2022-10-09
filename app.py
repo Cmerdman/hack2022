@@ -16,14 +16,14 @@ theme = {
 app = Dash(__name__, 
           assets_external_path='assets/base-styles.css')
 
-rootLayout = html.Div(style={'backgroundColor': '#6C6968'}, children = [ 
+rootLayout = html.Div( children = [  #style={'backgroundColor': '#6C6968'},
     html.H1(children='AEP'), 
     html.Div(children=[
         html.Label('Dropdown'),
         dcc.Dropdown(id = "slct_turbine",
                     options=[
                         {"label" : "Station A", "value": "stationOne.csv"},
-                        {"label" : "Station B", "value": "Station B"},
+                        {"label" : "Station B", "value": "stationTwo.csv"},
                         {"label" : "Station C", "value": "Station C"},
                         {"label" : "Station D", "value": "Station D"},
                         {"label" : "Station E", "value": "Station E"},
